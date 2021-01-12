@@ -1,0 +1,33 @@
+.app_header {
+    flex: 1 1 auto;
+    height: 80px;
+    background-color: white;
+    justify-content: center;
+    padding: 12px 4px 4px 16px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: white;
+    color: black;
+    margin: 0px;
+}
+
+.header_search {
+    display: flex;
+}
+
+.header_searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.header_menuItems {
+    display: flex;
+    align-items: center;
+}
