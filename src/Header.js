@@ -11,7 +11,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 function Header() {
     return (
-        <div className="app_header">
             <div className="header_wrapper">
                     <div className="header_logo">
                         <IconButton>
@@ -20,18 +19,23 @@ function Header() {
                     </div>
 
                     <div className="header_button homePage">
-                        <p>HomePage</p>
+                        <a href="/">HomePage</a>
                     </div>
 
                     <div className="header_button followig">
-                        <p>Following</p>
+                        <a href="/">Following</a>
                     </div>
 
                     <div className="header_search">
                         <div className="header_searchContainer">
-                            <SearchIcon />
-                            <input type="text"/>
-                            <button>Submit</button>
+                            <IconButton>
+                                <SearchIcon />
+                            </IconButton>
+                            <form>
+                                <input type="text"/>
+                                <button>Submit</button>                                
+                            </form>
+
                         </div>
                     </div>
 
@@ -50,7 +54,6 @@ function Header() {
                         </IconButton>
                     </div>
             </div>
-        </div>
     )
 }
 

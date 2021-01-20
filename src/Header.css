@@ -1,13 +1,4 @@
-.app_header {
-    flex: 1 1 auto;
-    height: 80px;
-    background-color: white;
-    justify-content: center;
-    padding: 12px 4px 4px 16px;
-    box-sizing: border-box;
-    align-items: center;
 
-}
 
 .header_wrapper {
     display: flex;
@@ -19,19 +10,45 @@
 }
 
 .header_search {
-    display: flex;
-    flex:1 1 auto;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
 }
 
 .header_searchContainer {
-    flex:1;
-    align-items: center;
-    justify-content: center;
-}
-
-.header_menuItems {
+    background-color: #efefef;
     display: flex;
     align-items: center;
+    height: 48px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding-left: 12px;
+
+}
+
+.header_searchContainer > form {
+    display: flex;
+    flex: 1;
+}
+
+.header_searchContainer > form > input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 0 4px;
+    font-size: 16px;
+}
+
+.header_searchContainer > form >input:focus {
+    outline: none;
+}
+.header_searchContainer > form >input:active {
+    outline: none;
+}
+.header_searchContainer > form >input:hover {
+    outline: none;
+}
+
+.header_searchContainer > form > button {
+    display: none;
 }
