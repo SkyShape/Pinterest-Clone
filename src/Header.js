@@ -1,14 +1,22 @@
 import React from 'react';
 import "./Header.css";
+import IconButton from '@material-ui/core/IconButton';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import SearchIcon from '@material-ui/icons/Search';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import TextsmsIcon from '@material-ui/icons/Textsms';
+import FaceIcon from '@material-ui/icons/Face';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 
 function Header() {
     return (
         <div className="app_header">
             <div className="header_wrapper">
                     <div className="header_logo">
-                        <PinterestIcon />
+                        <IconButton>
+                            <PinterestIcon />
+                        </IconButton>
                     </div>
 
                     <div className="header_button homePage">
@@ -28,10 +36,18 @@ function Header() {
                     </div>
 
                     <div className="header_menuItems">
-                        <p>icon</p>
-                        <p>icon</p>
-                        <p>icon</p>
-                        <p>icon</p>
+                        <IconButton>
+                            <NotificationsIcon />
+                        </IconButton>
+                        <IconButton>
+                            <TextsmsIcon />
+                        </IconButton>
+                        <IconButton>
+                            <FaceIcon />
+                        </IconButton>
+                        <IconButton>
+                            <ExpandMoreIcon />
+                        </IconButton>
                     </div>
             </div>
         </div>
