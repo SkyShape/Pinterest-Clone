@@ -10,7 +10,7 @@ function App() {
           <Header />
         </div>
 
-        <div className="app_mainboard">
+        <div className="app_body">
           <Mainboard />
         </div>
     </div>

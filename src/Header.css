@@ -9,6 +9,11 @@
     margin: 0px;
 }
 
+.header_logo .MuiSvgIcon-root{
+    color: #e60023;
+    font-size: 32px;
+}
+
 .header_search {
     flex: 1;
 }
@@ -52,3 +57,35 @@
 .header_searchContainer > form > button {
     display: none;
 }
+
+.header_button {
+    display: flex;
+    height: 48px;
+    min-width: 123px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+}
+
+.homePage > a {
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+}
+
+.following {
+    background-color: white;
+}
+
+.following:hover {
+    background-color: #efefef;
+}
+
+.following > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+

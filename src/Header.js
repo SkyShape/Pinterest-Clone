@@ -22,7 +22,7 @@ function Header() {
                         <a href="/">HomePage</a>
                     </div>
 
-                    <div className="header_button followig">
+                    <div className="header_button following">
                         <a href="/">Following</a>
                     </div>
 
@@ -35,7 +35,6 @@ function Header() {
                                 <input type="text"/>
                                 <button>Submit</button>                                
                             </form>
-
                         </div>
                     </div>
 
