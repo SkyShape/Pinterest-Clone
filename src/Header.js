@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import IconButton from '@material-ui/core/IconButton';
 import PinterestIcon from '@material-ui/icons/Pinterest';
@@ -7,9 +7,23 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import FaceIcon from '@material-ui/icons/Face';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import db from './firebase';
 
 
-function Header() {
+function Header(props) {
+    const [input, setInput] = useState("");
+
+   
+
+    const onSearchSubmit = (e) => {
+        e.preventDefault(); 
+
+        props.onSubmit(input); 
+        db.collection("terms").add({ 
+            term: input,
+        }); 
+    };
+
     return (
             <div className="header_wrapper">
                     <div className="header_logo">
@@ -32,8 +46,8 @@ function Header() {
                                 <SearchIcon />
                             </IconButton>
                             <form>
-                                <input type="text"/>
-                                <button>Submit</button>                                
+                                <input type="text" onChange={(e) => setInput(e.target.value)}/>
+                                <button type="submit" onClick={onSearchSubmit} >Submit</button>                                
                             </form>
                         </div>
                     </div>

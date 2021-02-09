@@ -1,0 +1,21 @@
+[debug] [2021-01-24T21:15:33.894Z] ----------------------------------------------------------------------
+[debug] [2021-01-24T21:15:33.896Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vlad0\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-24T21:15:33.896Z] CLI Version:   8.10.0
+[debug] [2021-01-24T21:15:33.896Z] Platform:      win32
+[debug] [2021-01-24T21:15:33.896Z] Node Version:  v12.18.3
+[debug] [2021-01-24T21:15:33.897Z] Time:          Sun Jan 24 2021 22:15:33 GMT+0100 (Central European Standard Time)
+[debug] [2021-01-24T21:15:33.897Z] ----------------------------------------------------------------------
+[debug] [2021-01-24T21:15:33.897Z] 
+[debug] [2021-01-24T21:15:33.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-24T21:15:33.904Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\LearnWeb\ClevarProgrammer\CallZoom\JessyCall\12.01\pinterest-clone
+
